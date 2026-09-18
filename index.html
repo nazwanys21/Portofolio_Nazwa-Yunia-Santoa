@@ -37,7 +37,7 @@
 <body class="bg-lightBg text-slate-800 antialiased selection:bg-softPink selection:text-slate-900">
 
   <!-- NAVBAR -->
-  <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-pink-100/60">
+  <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-40 border-b border-pink-100/60">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#hero" class="text-xl font-bold tracking-tight text-slate-800 flex items-center gap-2">
         <span class="w-8 h-8 rounded-full bg-gradient-to-tr from-softYellow to-softPink flex items-center justify-center text-slate-900 font-extrabold text-sm shadow-sm">NY</span>
@@ -91,7 +91,7 @@
             <span class="bg-gradient-to-r from-pink-600 to-amber-600 bg-clip-text text-transparent">Information Systems Student</span> | Data & BI Enthusiast
           </p>
           <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
-            Detail-oriented Information Systems student proficient in transforming raw, complex data into actionable business insights using SQL, Python, Microsoft Excel, and Google Looker Studio.
+            Information Systems student at Telkom University with an interest in Data Analytics. Experienced in data processing, analysis, visualization, and report preparation through academic projects, bootcamp training, and organizational activities. Experienced in using Microsoft Excel, SQL, Python, and Google Looker Studio to support data-driven business decisions.
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <a href="#projects" class="px-6 py-3.5 rounded-full bg-softPink hover:bg-softPinkHover text-slate-900 font-bold shadow-sm hover:shadow transition-all flex items-center gap-2">
@@ -106,8 +106,11 @@
 
         <!-- PROFILE PHOTO SLOT -->
         <div class="lg:col-span-5 flex justify-center">
-          <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-3xl overflow-hidden p-2 bg-gradient-to-tr from-softYellow to-softPink shadow-lg">
-            <img src="profile.jpeg" alt="Nazwa Yunia Santosa" class="w-full h-full object-cover rounded-2xl bg-slate-100">
+          <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-3xl overflow-hidden p-2 bg-gradient-to-tr from-softYellow to-softPink shadow-lg cursor-pointer group" onclick="openModal('profile.jpeg')">
+            <img src="profile.jpeg" alt="Nazwa Yunia Santosa" class="w-full h-full object-cover rounded-2xl bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+              <span class="text-white text-xs bg-black/60 px-3 py-1.5 rounded-full font-medium flex items-center gap-1.5"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Click to preview</span>
+            </div>
           </div>
         </div>
 
@@ -147,23 +150,50 @@
           <div class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold">Professional Summary</div>
           <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Turning Raw Data into Strategic Business Insights</h2>
           <p class="text-slate-600 leading-relaxed">
-            Detail-oriented Information Systems student at Telkom University with a strong background in data analytics, database management, and business intelligence. Demonstrated expertise in data cleaning, ETL pipeline design, exploratory data analysis, and interactive dashboard development through corporate internship experience, technical bootcamps, and academic projects.
+            Information Systems student at Telkom University with an interest in Data Analytics. Experienced in data processing, analysis, visualization, and report preparation through academic projects, bootcamp training, and organizational activities. Experienced in using Microsoft Excel, SQL, Python, and Google Looker Studio to support data-driven business decisions.
           </p>
           
-          <!-- HONORS & AWARDS -->
-          <div class="p-5 rounded-2xl bg-gradient-to-r from-amber-50 to-pink-50 border border-amber-200/60 flex items-start gap-4 overflow-hidden">
-            <div class="p-2.5 rounded-xl bg-amber-400 text-white shadow-sm mt-0.5 shrink-0">
-              <i data-lucide="award" class="w-5 h-5"></i>
+          <!-- HONORS & AWARDS CARD -->
+          <div class="p-6 rounded-3xl bg-gradient-to-br from-amber-50/80 via-white to-pink-50/80 border border-amber-200/60 shadow-sm space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="p-2.5 rounded-xl bg-amber-400 text-white shadow-sm shrink-0">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-800">Honors & Awards</span>
+                <h4 class="font-bold text-slate-900 text-base">3rd Place Winner – National Essay Competition</h4>
+                <p class="text-xs text-slate-500">Unnes Scholarship Community (Oct 2025)</p>
+              </div>
             </div>
-            <div class="flex-grow">
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-800">Honors & Awards</span>
-              <h4 class="font-bold text-slate-900 text-base mt-0.5">3rd Place Winner – National Essay Competition</h4>
-              <p class="text-xs text-slate-600 mt-1">Unnes Scholarship Community (Oct 2025)</p>
+
+            <div class="bg-white/80 p-4 rounded-2xl border border-amber-100 text-xs text-slate-700 leading-relaxed">
+              <span class="font-bold text-slate-900 block mb-1">Judul Esai:</span>
+              POTENSEEK: APLIKASI BERBASIS ARTIFICIAL INTELLIGENCE (AI) DENGAN PENDEKATAN PASSION-BASED LEARNING DALAM MENDUKUNG PENGEMBANGAN POTENSI GENERASI MUDA INDONESIA
             </div>
-            <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-amber-200">
-              <img src="award1.jpeg" alt="Award Foto" class="w-full h-full object-cover">
+
+            <!-- Award Photos Gallery -->
+            <div class="grid grid-cols-3 gap-3 pt-1">
+              <div class="h-24 rounded-xl overflow-hidden border border-slate-200 cursor-pointer group relative" onclick="openModal('award1.jpeg')">
+                <img src="award1.jpeg" alt="Award 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                </div>
+              </div>
+              <div class="h-24 rounded-xl overflow-hidden border border-slate-200 cursor-pointer group relative" onclick="openModal('award2.jpeg')">
+                <img src="award2.jpeg" alt="Award 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                </div>
+              </div>
+              <div class="h-24 rounded-xl overflow-hidden border border-slate-200 cursor-pointer group relative" onclick="openModal('award3.png')">
+                <img src="award3.png" alt="Produk Lomba" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
 
       </div>
@@ -205,7 +235,7 @@
           
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <!-- Org 1 -->
+            <!-- Org 1: OC GENESIS -->
             <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2">
@@ -219,12 +249,24 @@
                   <li>Authored official event documentation, meeting minutes, and operational templates.</li>
                 </ul>
               </div>
-              <div class="h-32 w-full rounded-2xl overflow-hidden border border-slate-100">
-                <img src="org1.png" alt="OC GENESIS" class="w-full h-full object-cover">
+              <!-- 2 Photos for OC GENESIS -->
+              <div class="grid grid-cols-2 gap-2">
+                <div class="h-28 w-full rounded-2xl overflow-hidden border border-slate-100 cursor-pointer group relative" onclick="openModal('org1.png')">
+                  <img src="org1.png" alt="OC GENESIS 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                  </div>
+                </div>
+                <div class="h-28 w-full rounded-2xl overflow-hidden border border-slate-100 cursor-pointer group relative" onclick="openModal('org1a.jpeg')">
+                  <img src="org1a.jpeg" alt="OC GENESIS 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <!-- Org 2 -->
+            <!-- Org 2: EDM Laboratory -->
             <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2">
@@ -233,24 +275,38 @@
                 </div>
                 <h4 class="text-lg font-bold text-slate-900">Study Group Member (Growth with EDM)</h4>
                 <p class="text-xs font-semibold text-pink-600 mb-3">EDM Laboratory</p>
-                <ul class="space-y-1.5 text-slate-600 text-xs list-disc list-inside leading-relaxed">
+                <ul class="space-y-1.5 text-slate-600 text-xs list-disc list-inside leading-relaxed mb-4">
                   <li>Completed hands-on mini-projects covering data understanding, data cleaning, and EDA in weekly technical sessions.</li>
                   <li>Co-authored data analysis documentation and project summaries to present technical findings.</li>
                 </ul>
               </div>
+              <div class="h-28 w-full rounded-2xl overflow-hidden border border-slate-100 cursor-pointer group relative" onclick="openModal('org2.png')">
+                <img src="org2.png" alt="EDM Laboratory" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                </div>
+              </div>
             </div>
 
-            <!-- Org 3 -->
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm md:col-span-2">
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Sep 2023 – Oct 2024</span>
-                <span class="text-xs text-slate-400">Bandung</span>
+            <!-- Org 3: Head of Event -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm md:col-span-2 flex flex-col sm:flex-row gap-6 items-center">
+              <div class="flex-grow">
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Sep 2023 – Oct 2024</span>
+                  <span class="text-xs text-slate-400">Bandung</span>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900">Head of Event Division</h4>
+                <p class="text-xs font-semibold text-pink-600 mb-2">First Meet Information Systems</p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                  Led the planning and execution of orientation events for new Information Systems students, overseeing schedules, vendor coordination, and speaker management.
+                </p>
               </div>
-              <h4 class="text-lg font-bold text-slate-900">Head of Event Division</h4>
-              <p class="text-xs font-semibold text-pink-600 mb-2">First Meet Information Systems</p>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Led the planning and execution of orientation events for new Information Systems students, overseeing schedules, vendor coordination, and speaker management.
-              </p>
+              <div class="h-32 w-full sm:w-48 shrink-0 rounded-2xl overflow-hidden border border-slate-100 cursor-pointer group relative" onclick="openModal('org3.jpeg')">
+                <img src="org3.jpeg" alt="First Meet IS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -276,8 +332,11 @@
         <!-- Project 1 -->
         <div class="bg-lightBg rounded-3xl overflow-hidden border border-slate-100 hover:border-pink-200 transition-all hover:shadow-md flex flex-col justify-between">
           <div>
-            <div class="h-48 w-full bg-slate-200 overflow-hidden">
-              <img src="project1.png" alt="Ship Crew Recruitment" class="w-full h-full object-cover">
+            <div class="h-48 w-full bg-slate-200 overflow-hidden cursor-pointer group relative" onclick="openModal('project1.png')">
+              <img src="project1.png" alt="Ship Crew Recruitment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <i data-lucide="maximize-2" class="w-5 h-5 text-white"></i>
+              </div>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-2">
@@ -300,8 +359,11 @@
         <!-- Project 2 -->
         <div class="bg-lightBg rounded-3xl overflow-hidden border border-slate-100 hover:border-pink-200 transition-all hover:shadow-md flex flex-col justify-between">
           <div>
-            <div class="h-48 w-full bg-slate-200 overflow-hidden">
-              <img src="project2.png" alt="Product KPI Dashboard" class="w-full h-full object-cover">
+            <div class="h-48 w-full bg-slate-200 overflow-hidden cursor-pointer group relative" onclick="openModal('project2.png')">
+              <img src="project2.png" alt="Product KPI Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <i data-lucide="maximize-2" class="w-5 h-5 text-white"></i>
+              </div>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-2">
@@ -325,8 +387,11 @@
         <!-- Project 3 -->
         <div class="bg-lightBg rounded-3xl overflow-hidden border border-slate-100 hover:border-pink-200 transition-all hover:shadow-md flex flex-col justify-between">
           <div>
-            <div class="h-48 w-full bg-slate-200 overflow-hidden">
-              <img src="project3.jpg" alt="Furniture Sales Analysis" class="w-full h-full object-cover">
+            <div class="h-48 w-full bg-slate-200 overflow-hidden cursor-pointer group relative" onclick="openModal('project3.jpg')">
+              <img src="project3.jpg" alt="Furniture Sales Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <i data-lucide="maximize-2" class="w-5 h-5 text-white"></i>
+              </div>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-2">
@@ -489,60 +554,44 @@
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
+  <!-- CONTACT SECTION (UPDATED: CLEAN CONTACT INFO) -->
   <section id="contact" class="py-20 bg-lightBg relative overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-br from-softYellow/60 via-white to-softPink/60 p-8 sm:p-12 rounded-3xl border border-pink-100 shadow-sm">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-softYellow/60 via-white to-softPink/60 p-8 sm:p-12 rounded-3xl border border-pink-100 shadow-sm text-center">
+        
+        <div class="max-w-xl mx-auto space-y-6">
+          <div class="inline-block px-3 py-1 rounded-full bg-white text-pink-700 text-xs font-semibold shadow-sm">Get in Touch</div>
+          <h2 class="text-3xl font-extrabold text-slate-900">Let's Connect!</h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Open for full-time/internship opportunities in Data Analysis, Business Intelligence, or HR Analytics. Feel free to reach out via email, phone, or LinkedIn!
+          </p>
           
-          <div class="md:col-span-6 space-y-4">
-            <div class="inline-block px-3 py-1 rounded-full bg-white text-pink-700 text-xs font-semibold shadow-sm">Get in Touch</div>
-            <h2 class="text-3xl font-extrabold text-slate-900">Let's Connect!</h2>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Open for full-time/internship opportunities in Data Analysis, Business Intelligence, or HR Analytics. Feel free to reach out via email or phone!
-            </p>
+          <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 pt-4">
+            <a href="mailto:nazwayunia21@gmail.com" class="w-full sm:w-auto px-5 py-3 rounded-2xl bg-white hover:bg-pink-50 border border-slate-100 text-slate-700 hover:text-pink-600 transition-all text-sm font-semibold flex items-center justify-center gap-3 shadow-sm">
+              <span class="p-1.5 rounded-lg bg-pink-100 text-pink-600"><i data-lucide="mail" class="w-4 h-4"></i></span>
+              nazwayunia21@gmail.com
+            </a>
             
-            <div class="space-y-3 pt-2">
-              <a href="mailto:nazwayunia21@gmail.com" class="flex items-center gap-3 text-slate-700 hover:text-pink-600 transition-colors text-sm font-medium">
-                <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="mail" class="w-4 h-4 text-pink-500"></i></span>
-                nazwayunia21@gmail.com
-              </a>
-              <a href="tel:+6281290046122" class="flex items-center gap-3 text-slate-700 hover:text-pink-600 transition-colors text-sm font-medium">
-                <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="phone" class="w-4 h-4 text-emerald-500"></i></span>
-                +62 812 9004 6122
-              </a>
-              <a href="https://linkedin.com/in/nazwayuniasantosa/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-slate-700 hover:text-pink-600 transition-colors text-sm font-medium">
-                <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i></span>
-                linkedin.com/in/nazwayuniasantosa
-              </a>
-              <div class="flex items-center gap-3 text-slate-700 text-sm font-medium">
-                <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="map-pin" class="w-4 h-4 text-amber-500"></i></span>
-                Depok, West Java, Indonesia
-              </div>
-            </div>
+            <a href="tel:+6281290046122" class="w-full sm:w-auto px-5 py-3 rounded-2xl bg-white hover:bg-emerald-50 border border-slate-100 text-slate-700 hover:text-emerald-600 transition-all text-sm font-semibold flex items-center justify-center gap-3 shadow-sm">
+              <span class="p-1.5 rounded-lg bg-emerald-100 text-emerald-600"><i data-lucide="phone" class="w-4 h-4"></i></span>
+              +62 812 9004 6122
+            </a>
+            
+            <a href="https://linkedin.com/in/nazwayuniasantosa/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-3 rounded-2xl bg-white hover:bg-blue-50 border border-slate-100 text-slate-700 hover:text-blue-600 transition-all text-sm font-semibold flex items-center justify-center gap-3 shadow-sm">
+              <!-- SVG Icon LinkedIn Official -->
+              <span class="p-1.5 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </span>
+              linkedin.com/in/nazwayuniasantosa
+            </a>
           </div>
 
-          <div class="md:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100">
-            <form id="contact-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
-                <input type="text" required placeholder="Your Name" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-400">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Email</label>
-                <input type="email" required placeholder="email@domain.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-400">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Message</label>
-                <textarea rows="3" required placeholder="Write your message or inquiry..." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-400"></textarea>
-              </div>
-              <button type="submit" class="w-full py-3 rounded-xl bg-softPink hover:bg-softPinkHover text-slate-900 font-bold text-sm shadow-sm transition-all flex items-center justify-center gap-2">
-                Send Message <i data-lucide="send" class="w-4 h-4"></i>
-              </button>
-            </form>
+          <div class="pt-2 text-slate-500 text-xs flex items-center justify-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-500"></i>
+            Depok, West Java, Indonesia
           </div>
-
         </div>
+
       </div>
     </div>
   </section>
@@ -554,12 +603,41 @@
     </div>
   </footer>
 
+  <!-- FULLSCREEN IMAGE MODAL -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all duration-300" onclick="closeModal()">
+    <div class="relative max-w-4xl max-h-[90vh] w-full flex items-center justify-center" onclick="event.stopPropagation()">
+      <button onclick="closeModal()" class="absolute -top-12 right-0 text-white hover:text-pink-300 text-sm font-semibold flex items-center gap-1 bg-white/10 px-3 py-1.5 rounded-full backdrop-blur-md">
+        <i data-lucide="x" class="w-4 h-4"></i> Close
+      </button>
+      <img id="modal-img" src="" alt="Fullscreen Preview" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl">
+    </div>
+  </div>
+
   <script>
     lucide.createIcons();
+    
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // Image Modal Script
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+
+    function openModal(src) {
+      modalImg.src = src;
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modalImg.src = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
     });
   </script>
 </body>
