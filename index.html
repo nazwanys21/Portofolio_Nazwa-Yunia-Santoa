@@ -27,7 +27,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -45,11 +45,12 @@
       </a>
       
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-pink-600 transition-colors">About Me</a>
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-pink-600 transition-colors">About</a>
         <a href="#experience" class="hover:text-pink-600 transition-colors">Experience</a>
-        <a href="#projects" class="hover:text-pink-600 transition-colors">Data Projects</a>
+        <a href="#projects" class="hover:text-pink-600 transition-colors">Projects</a>
         <a href="#skills" class="hover:text-pink-600 transition-colors">Skills</a>
+        <a href="#certifications" class="hover:text-pink-600 transition-colors">Certifications</a>
         <a href="#contact" class="px-4 py-2 rounded-full bg-softPink hover:bg-softPinkHover text-slate-800 font-semibold transition-all shadow-sm">Contact</a>
       </nav>
 
@@ -61,10 +62,11 @@
 
     <!-- Mobile Nav -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
-      <a href="#about" class="block py-2 text-slate-600 font-medium hover:text-pink-600">About Me</a>
+      <a href="#about" class="block py-2 text-slate-600 font-medium hover:text-pink-600">About</a>
       <a href="#experience" class="block py-2 text-slate-600 font-medium hover:text-pink-600">Experience</a>
-      <a href="#projects" class="block py-2 text-slate-600 font-medium hover:text-pink-600">Data Projects</a>
+      <a href="#projects" class="block py-2 text-slate-600 font-medium hover:text-pink-600">Projects</a>
       <a href="#skills" class="block py-2 text-slate-600 font-medium hover:text-pink-600">Skills</a>
+      <a href="#certifications" class="block py-2 text-slate-600 font-medium hover:text-pink-600">Certifications</a>
       <a href="#contact" class="block py-2 text-center rounded-xl bg-softPink text-slate-800 font-semibold">Contact</a>
     </div>
   </header>
@@ -86,10 +88,10 @@
             Nazwa Yunia Santosa
           </h1>
           <p class="text-xl sm:text-2xl font-semibold text-slate-700 mb-6">
-            <span class="bg-gradient-to-r from-pink-600 to-amber-600 bg-clip-text text-transparent">Information Systems Student</span> | Data Enthusiast
+            <span class="bg-gradient-to-r from-pink-600 to-amber-600 bg-clip-text text-transparent">Information Systems Student</span> | Data & BI Enthusiast
           </p>
           <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
-            Transforming raw data into high-value business insights through statistical analysis, interactive dashboards, and data modeling.
+            Detail-oriented Information Systems student proficient in transforming raw, complex data into actionable business insights using SQL, Python, Microsoft Excel, and Google Looker Studio.
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <a href="#projects" class="px-6 py-3.5 rounded-full bg-softPink hover:bg-softPinkHover text-slate-900 font-bold shadow-sm hover:shadow transition-all flex items-center gap-2">
@@ -97,7 +99,7 @@
               <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
             </a>
             <a href="#contact" class="px-6 py-3.5 rounded-full bg-white border border-slate-200 hover:border-slate-300 text-slate-700 font-semibold transition-all">
-              Get in Touch
+              Contact Me
             </a>
           </div>
         </div>
@@ -113,48 +115,50 @@
     </div>
   </section>
 
-  <!-- ABOUT ME SECTION -->
+  <!-- ABOUT & EDUCATION SECTION -->
   <section id="about" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         
         <div class="md:col-span-5 relative">
-          <div class="aspect-square rounded-3xl bg-gradient-to-br from-softYellow to-softPink p-8 flex flex-col justify-between shadow-sm border border-pink-100">
+          <div class="rounded-3xl bg-gradient-to-br from-softYellow/80 to-softPink/80 p-8 flex flex-col justify-between shadow-sm border border-pink-100 space-y-6">
             <div class="space-y-4">
-              <div class="w-16 h-16 rounded-2xl bg-white/80 backdrop-blur-sm flex items-center justify-center text-pink-600 font-bold text-2xl shadow-sm">
-                <i data-lucide="line-chart" class="w-8 h-8"></i>
+              <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-pink-600 font-bold text-2xl shadow-sm">
+                <i data-lucide="graduation-cap" class="w-7 h-7"></i>
               </div>
-              <h3 class="text-2xl font-bold text-slate-900">Education</h3>
-              <p class="text-slate-700 text-sm leading-relaxed">
-                Bachelor of Information Systems at Telkom University, Bandung.
-              </p>
+              <h3 class="text-xl font-bold text-slate-900">Education</h3>
+              <div>
+                <p class="text-slate-900 font-semibold">Telkom University</p>
+                <p class="text-slate-600 text-xs">B.S. in Information Systems (Sep 2023 – Present)</p>
+                <div class="mt-2 text-2xl font-extrabold text-slate-900">GPA 3.87 <span class="text-xs font-normal text-slate-600">/ 4.00</span></div>
+              </div>
             </div>
-            <div class="bg-white/90 backdrop-blur-sm p-4 rounded-2xl border border-white/60 shadow-sm mt-6">
-              <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Cumulative GPA</div>
-              <div class="text-3xl font-extrabold text-slate-900 mt-0.5">3.87 <span class="text-xs font-normal text-slate-500">/ 4.00</span></div>
+
+            <hr class="border-slate-300/60">
+
+            <div>
+              <p class="text-slate-900 font-semibold">Bintara Depok High School</p>
+              <p class="text-slate-600 text-xs">Diploma in Natural Sciences (Jul 2020 – Jun 2023)</p>
             </div>
           </div>
         </div>
 
         <div class="md:col-span-7 space-y-6">
-          <div class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold">About Me</div>
-          <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Turning Complex Data into Strategic Business Action</h2>
+          <div class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold">Professional Summary</div>
+          <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Turning Raw Data into Strategic Business Insights</h2>
           <p class="text-slate-600 leading-relaxed">
-            I am a detail-oriented Information Systems student with a strong foundation in data analytics, database management, and Business Intelligence (BI). Proficient in handling raw data through data cleaning, ETL pipeline design, Exploratory Data Analysis (EDA), and creating interactive dashboards.
+            Detail-oriented Information Systems student at Telkom University with a strong background in data analytics, database management, and business intelligence. Demonstrated expertise in data cleaning, ETL pipeline design, exploratory data analysis, and interactive dashboard development through corporate internship experience, technical bootcamps, and academic projects.
           </p>
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-              <div class="font-bold text-slate-900 text-base mb-1 flex items-center gap-2">
-                <i data-lucide="database" class="w-4 h-4 text-pink-500"></i> ETL & Data Pipeline
-              </div>
-              <p class="text-xs text-slate-600">Experience in integrating data using Star Schema, SQL, and Pentaho.</p>
+          <!-- HONORS & AWARDS -->
+          <div class="p-5 rounded-2xl bg-gradient-to-r from-amber-50 to-pink-50 border border-amber-200/60 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-amber-400 text-white shadow-sm mt-0.5">
+              <i data-lucide="award" class="w-5 h-5"></i>
             </div>
-            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-              <div class="font-bold text-slate-900 text-base mb-1 flex items-center gap-2">
-                <i data-lucide="pie-chart" class="w-4 h-4 text-amber-500"></i> BI & Dashboarding
-              </div>
-              <p class="text-xs text-slate-600">Interactive data visualization with Google Looker Studio & Python.</p>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-800">Honors & Awards</span>
+              <h4 class="font-bold text-slate-900 text-base mt-0.5">3rd Place Winner – National Essay Competition</h4>
+              <p class="text-xs text-slate-600 mt-1">Unnes Scholarship Community (Oct 2025)</p>
             </div>
           </div>
         </div>
@@ -163,54 +167,89 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE SECTION -->
+  <!-- WORK & ORGANIZATIONAL EXPERIENCE SECTION -->
   <section id="experience" class="py-20 bg-lightBg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <div class="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 text-xs font-semibold mb-3">Work & Organizational Experience</div>
-        <h2 class="text-3xl font-bold text-slate-900">Professional Journey</h2>
+        <div class="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 text-xs font-semibold mb-3">Experience</div>
+        <h2 class="text-3xl font-bold text-slate-900">Work & Leadership Journey</h2>
       </div>
 
       <div class="space-y-8 max-w-4xl mx-auto">
         <!-- Work Experience -->
         <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-2 h-full bg-softPink"></div>
+          <div class="absolute top-0 left-0 w-2 h-full bg-pink-500"></div>
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
             <div>
+              <span class="text-xs font-bold text-pink-600 uppercase tracking-wider">Work Experience</span>
               <h3 class="text-xl font-bold text-slate-900">Human Resources (HR) Intern</h3>
-              <p class="text-sm font-semibold text-pink-600">PT Baruna Raya Logistics — Jakarta</p>
+              <p class="text-sm font-semibold text-slate-700">PT Baruna Raya Logistics — Jakarta, Indonesia</p>
             </div>
             <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 w-fit">
               Jul 2026 – Sep 2026
             </span>
           </div>
           <ul class="space-y-2 text-slate-600 text-sm list-disc list-inside leading-relaxed">
-            <li>Processed and analyzed recruitment datasets using Microsoft Excel (Pivot Tables & advanced formulas) to support data-driven decision-making in talent acquisition.</li>
-            <li>Optimized employee data management by updating certification records in SAP and conducting manual QA testing on the recruitment website.</li>
-            <li>Designed interactive Google Looker Studio dashboards to visualize key HR metrics and recruitment efficiency.</li>
+            <li>Processed and analyzed recruitment datasets using Microsoft Excel (Pivot Tables and advanced formulas) to support data-driven talent acquisition and HR decision-making.</li>
+            <li>Streamlined crew recruitment operations by screening applicant resumes, coordinating interview schedules, and maintaining administrative accuracy across candidate pipelines.</li>
+            <li>Optimized employee data management by updating certification records in SAP and conducting QA manual testing on the recruitment website, documenting bugs for IT resolution.</li>
           </ul>
         </div>
 
-        <!-- Organizational Experience Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
-            <span class="text-xs font-medium bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">May 2025 – Dec 2025</span>
-            <h4 class="text-lg font-bold text-slate-900 mt-3">Rules & Motivation Crew (RMC) Member</h4>
-            <p class="text-xs text-slate-500 mb-3">OC GENESIS 2025</p>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Managed administrative data and generated activity reports for 293 participants and 60 committee members, improving tracking efficiency and rule compliance.
-            </p>
-          </div>
+        <!-- Organizational Experience -->
+        <div class="space-y-6">
+          <h3 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">Organizational Experience</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Org 1 -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">May 2025 – Dec 2025</span>
+                  <span class="text-xs text-slate-400">Bandung</span>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900">Rules & Motivation Crew (RMC) Member</h4>
+                <p class="text-xs font-semibold text-pink-600 mb-3">OC GENESIS 2025</p>
+                <ul class="space-y-1.5 text-slate-600 text-xs list-disc list-inside leading-relaxed">
+                  <li>Managed administrative data and generated activity reports for 293 participants and 60 committee members, enhancing tracking efficiency.</li>
+                  <li>Authored official event documentation, meeting minutes, and operational templates.</li>
+                </ul>
+              </div>
+            </div>
 
-          <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
-            <span class="text-xs font-medium bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Jan 2025 – Aug 2025</span>
-            <h4 class="text-lg font-bold text-slate-900 mt-3">Study Group Member</h4>
-            <p class="text-xs text-slate-500 mb-3">EDM Laboratory (Growth with EDM)</p>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Completed weekly mini-projects covering data understanding, data cleaning, EDA, and technical documentation for data analysis workflows.
-            </p>
+            <!-- Org 2 -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Jan 2025 – Aug 2025</span>
+                  <span class="text-xs text-slate-400">Bandung</span>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900">Study Group Member (Growth with EDM)</h4>
+                <p class="text-xs font-semibold text-pink-600 mb-3">EDM Laboratory</p>
+                <ul class="space-y-1.5 text-slate-600 text-xs list-disc list-inside leading-relaxed">
+                  <li>Completed hands-on mini-projects covering data understanding, data cleaning, and EDA in weekly technical sessions.</li>
+                  <li>Co-authored data analysis documentation and project summaries to present technical findings.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Org 3 -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm md:col-span-2">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Sep 2023 – Oct 2024</span>
+                <span class="text-xs text-slate-400">Bandung</span>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900">Head of Event Division</h4>
+              <p class="text-xs font-semibold text-pink-600 mb-2">First Meet Information Systems</p>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Led the planning and execution of orientation events for new Information Systems students, overseeing schedules, vendor coordination, and speaker management.
+              </p>
+            </div>
+
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -220,37 +259,35 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <div class="inline-block px-3 py-1 rounded-full bg-softYellow text-slate-800 text-xs font-semibold mb-3">Featured Projects</div>
-          <h2 class="text-3xl font-bold text-slate-900">Selected Data Analytics Work</h2>
+          <div class="inline-block px-3 py-1 rounded-full bg-softYellow text-slate-800 text-xs font-semibold mb-3">Data Analytics Projects</div>
+          <h2 class="text-3xl font-bold text-slate-900">Featured Case Studies</h2>
         </div>
-        <p class="text-slate-500 text-sm max-w-md">
-          Explore case studies ranging from exploratory data analysis and regression modeling to interactive executive dashboards.
-        </p>
       </div>
 
       <!-- Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Project 1 -->
         <div class="bg-lightBg rounded-3xl overflow-hidden border border-slate-100 hover:border-pink-200 transition-all hover:shadow-md flex flex-col justify-between">
           <div>
             <div class="h-48 w-full bg-slate-200 overflow-hidden">
-              <img src="project1.jpg" alt="Ship Crew Recruitment Analysis" class="w-full h-full object-cover" onError="this.onerror=null;this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop';">
+              <img src="project1.jpg" alt="Ship Crew Recruitment" class="w-full h-full object-cover" onError="this.onerror=null;this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop';">
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-semibold text-pink-600">HR Analytics</span>
                 <span class="text-xs font-semibold text-slate-400">Python • Looker</span>
               </div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">Ship Crew Recruitment Analysis & Dashboard</h3>
-              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                Cleaned and transformed recruitment datasets using Pandas and designed Looker Studio dashboards to track recruitment trends.
-              </p>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Ship Crew Recruitment Data Analysis & Dashboard</h3>
+              <ul class="text-slate-600 text-xs space-y-2 list-disc list-inside leading-relaxed mb-4">
+                <li>Cleaned and transformed raw recruitment datasets for PT Baruna Raya Logistics using Python (Pandas).</li>
+                <li>Designed an interactive Google Looker Studio dashboard to visualize key HR metrics and hiring trends.</li>
+              </ul>
             </div>
           </div>
-          <div class="px-6 pb-6 flex flex-wrap gap-1.5 pt-2">
-            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Pandas</span>
-            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Looker Studio</span>
+          <div class="px-6 pb-6 flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Python (Pandas)</span>
+            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Google Looker Studio</span>
           </div>
         </div>
 
@@ -265,16 +302,17 @@
                 <span class="text-xs font-semibold text-pink-600">E-Commerce</span>
                 <span class="text-xs font-semibold text-slate-400">SQL • Pentaho</span>
               </div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">Product KPI Dashboard (Tokopedia Dataset)</h3>
-              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                Integrated e-commerce data using Star Schema modeling in SQL, executed ETL via Pentaho, and built an executive KPI dashboard.
-              </p>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Product KPI Dashboard Design (Tokopedia Dataset)</h3>
+              <ul class="text-slate-600 text-xs space-y-2 list-disc list-inside leading-relaxed mb-4">
+                <li>Executed end-to-end data integration by designing a Star Schema data model in SQL and ETL via Pentaho.</li>
+                <li>Conducted EDA on product metrics and built an executive KPI dashboard in Looker Studio.</li>
+              </ul>
             </div>
           </div>
-          <div class="px-6 pb-6 flex flex-wrap gap-1.5 pt-2">
+          <div class="px-6 pb-6 flex flex-wrap gap-1.5">
             <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">SQL</span>
             <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Pentaho</span>
-            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Star Schema</span>
+            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Looker Studio</span>
           </div>
         </div>
 
@@ -282,22 +320,23 @@
         <div class="bg-lightBg rounded-3xl overflow-hidden border border-slate-100 hover:border-pink-200 transition-all hover:shadow-md flex flex-col justify-between">
           <div>
             <div class="h-48 w-full bg-slate-200 overflow-hidden">
-              <img src="project3.jpg" alt="Used Motorcycle Sales Data Exploration" class="w-full h-full object-cover" onError="this.onerror=null;this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop';">
+              <img src="project3.jpg" alt="Furniture Sales Analysis" class="w-full h-full object-cover" onError="this.onerror=null;this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop';">
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-semibold text-pink-600">EDA</span>
-                <span class="text-xs font-semibold text-slate-400">Python • Seaborn</span>
+                <span class="text-xs font-semibold text-pink-600">Sales Analytics</span>
+                <span class="text-xs font-semibold text-slate-400">Python • Looker</span>
               </div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">Used Motorcycle Sales Data Exploration</h3>
-              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                Performed descriptive statistics and correlation analysis on motorcycle sales datasets to identify key price determinants.
-              </p>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Furniture Sales Performance Analysis</h3>
+              <ul class="text-slate-600 text-xs space-y-2 list-disc list-inside leading-relaxed mb-4">
+                <li>Analyzed over 10,000 furniture sales transactions using Python (Pandas) via cleaning and EDA.</li>
+                <li>Built an interactive dashboard highlighting high-revenue products and purchasing behaviors.</li>
+              </ul>
             </div>
           </div>
-          <div class="px-6 pb-6 flex flex-wrap gap-1.5 pt-2">
-            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Seaborn</span>
-            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Matplotlib</span>
+          <div class="px-6 pb-6 flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Python (Pandas)</span>
+            <span class="px-2.5 py-1 bg-white rounded-lg text-xs font-medium text-slate-600 border border-slate-200">Google Looker Studio</span>
           </div>
         </div>
 
@@ -305,7 +344,7 @@
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
+  <!-- TECHNICAL & SOFT SKILLS SECTION -->
   <section id="skills" class="py-20 bg-lightBg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -320,47 +359,123 @@
             <div class="p-2.5 rounded-xl bg-amber-100 text-amber-800">
               <i data-lucide="code" class="w-5 h-5"></i>
             </div>
-            <h3 class="font-bold text-slate-900 text-lg">Technical & Data</h3>
+            <h3 class="font-bold text-slate-900 text-lg">Technical Skills</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">SQL (MySQL)</span>
-            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Python</span>
-            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Pandas</span>
-            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">NumPy</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Python (Pandas, NumPy)</span>
             <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Matplotlib & Seaborn</span>
-            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Microsoft Excel (VBA/Macros, Pivot)</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">MS Excel (Pivot, VLOOKUP, INDEX MATCH, VBA/Macros)</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Google Looker Studio</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Pentaho (ETL)</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Google Colab</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Visual Paradigm</span>
+            <span class="px-3 py-1.5 rounded-full bg-softYellow text-slate-800 text-xs font-semibold">Figma</span>
           </div>
         </div>
 
         <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
           <div class="flex items-center gap-3 mb-2">
             <div class="p-2.5 rounded-xl bg-pink-100 text-pink-800">
-              <i data-lucide="wrench" class="w-5 h-5"></i>
+              <i data-lucide="brain" class="w-5 h-5"></i>
             </div>
-            <h3 class="font-bold text-slate-900 text-lg">Tools & Platforms</h3>
+            <h3 class="font-bold text-slate-900 text-lg">Analytical & Soft Skills</h3>
           </div>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Google Looker Studio</span>
-            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Pentaho (ETL)</span>
-            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Google Colab</span>
-            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Figma</span>
-            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Visual Paradigm</span>
-            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">SAP</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Exploratory Data Analysis (EDA)</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Data Cleaning & Formatting</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Data Visualization</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Statistical Hypothesis Testing</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Problem Solving</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Analytical Thinking</span>
+            <span class="px-3 py-1.5 rounded-full bg-softPink text-slate-800 text-xs font-semibold">Team Collaboration</span>
           </div>
         </div>
 
         <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
           <div class="flex items-center gap-3 mb-2">
             <div class="p-2.5 rounded-xl bg-slate-100 text-slate-800">
-              <i data-lucide="brain" class="w-5 h-5"></i>
+              <i data-lucide="languages" class="w-5 h-5"></i>
             </div>
-            <h3 class="font-bold text-slate-900 text-lg">Methods & Concepts</h3>
+            <h3 class="font-bold text-slate-900 text-lg">Languages</h3>
           </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">Exploratory Data Analysis (EDA)</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">Data Cleaning</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">Statistical Hypothesis Testing</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">Linear Regression</span>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1">
+                <span>Indonesian</span>
+                <span class="text-pink-600">Native</span>
+              </div>
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="w-full h-full bg-softPink"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1">
+                <span>English</span>
+                <span class="text-pink-600">Intermediate</span>
+              </div>
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="w-3/4 h-full bg-softYellow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold mb-3">Certifications & Training</div>
+        <h2 class="text-3xl font-bold text-slate-900">Continuous Professional Development</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        
+        <div class="p-6 rounded-3xl bg-lightBg border border-slate-100 flex items-start gap-4">
+          <div class="p-3 rounded-2xl bg-softYellow text-slate-800 font-bold">
+            <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-medium text-slate-400">KarirNex (Jun 2026)</span>
+            <h4 class="font-bold text-slate-900 text-base">Intensive Bootcamp (3 Weeks) – Microsoft Excel</h4>
+            <p class="text-xs text-slate-600 mt-1">Mastered Pivot Tables, VLOOKUP, INDEX MATCH, Dashboards, and VBA/Macros.</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-lightBg border border-slate-100 flex items-start gap-4">
+          <div class="p-3 rounded-2xl bg-softPink text-slate-800 font-bold">
+            <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-medium text-slate-400">KarirNex (May 2026)</span>
+            <h4 class="font-bold text-slate-900 text-base">Data Analyst Bootcamp</h4>
+            <p class="text-xs text-slate-600 mt-1">Applied SQL queries, Python data analysis, Data Cleaning, and Google Looker Studio visualizations.</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-lightBg border border-slate-100 flex items-start gap-4">
+          <div class="p-3 rounded-2xl bg-pink-100 text-pink-800 font-bold">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-medium text-slate-400">ElevAlte AI (Jun 2025)</span>
+            <h4 class="font-bold text-slate-900 text-base">AI Training</h4>
+            <p class="text-xs text-slate-600 mt-1">Explored Microsoft AI solutions and practical AI applications in business transformation.</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-lightBg border border-slate-100 flex items-start gap-4">
+          <div class="p-3 rounded-2xl bg-amber-100 text-amber-800 font-bold">
+            <i data-lucide="cloud" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-xs font-medium text-slate-400">Alibaba Cloud (Dec 2024)</span>
+            <h4 class="font-bold text-slate-900 text-base">Big Data Certification</h4>
+            <p class="text-xs text-slate-600 mt-1">Learned Big Data architecture, cloud analytics, and large-scale data storage techniques.</p>
           </div>
         </div>
 
@@ -369,16 +484,16 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="py-20 bg-white relative overflow-hidden">
+  <section id="contact" class="py-20 bg-lightBg relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-gradient-to-br from-softYellow/60 via-white to-softPink/60 p-8 sm:p-12 rounded-3xl border border-pink-100 shadow-sm">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           
           <div class="md:col-span-6 space-y-4">
-            <div class="inline-block px-3 py-1 rounded-full bg-white text-pink-700 text-xs font-semibold shadow-sm">Contact Me</div>
-            <h2 class="text-3xl font-extrabold text-slate-900">Let's Collaborate or Connect!</h2>
+            <div class="inline-block px-3 py-1 rounded-full bg-white text-pink-700 text-xs font-semibold shadow-sm">Get in Touch</div>
+            <h2 class="text-3xl font-extrabold text-slate-900">Let's Connect!</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-              I am always open to discussing internship opportunities, data analytics projects, or networking in the tech and data community.
+              Open for full-time/internship opportunities in Data Analysis, Business Intelligence, or HR Analytics. Feel free to reach out via email or phone!
             </p>
             
             <div class="space-y-3 pt-2">
@@ -386,13 +501,17 @@
                 <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="mail" class="w-4 h-4 text-pink-500"></i></span>
                 nazwayunia21@gmail.com
               </a>
+              <a href="tel:+6281290046122" class="flex items-center gap-3 text-slate-700 hover:text-pink-600 transition-colors text-sm font-medium">
+                <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="phone" class="w-4 h-4 text-emerald-500"></i></span>
+                +62 812 9004 6122
+              </a>
               <a href="https://linkedin.com/in/nazwayuniasantosa/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-slate-700 hover:text-pink-600 transition-colors text-sm font-medium">
                 <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i></span>
                 linkedin.com/in/nazwayuniasantosa
               </a>
               <div class="flex items-center gap-3 text-slate-700 text-sm font-medium">
                 <span class="p-2.5 rounded-xl bg-white shadow-sm border border-slate-100"><i data-lucide="map-pin" class="w-4 h-4 text-amber-500"></i></span>
-                West Java, Indonesia
+                Depok, West Java, Indonesia
               </div>
             </div>
           </div>
