@@ -212,6 +212,7 @@
         <!-- Work Experience -->
         <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden">
           <div class="absolute top-0 left-0 w-2 h-full bg-pink-500"></div>
+          
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
             <div>
               <span class="text-xs font-bold text-pink-600 uppercase tracking-wider">Work Experience</span>
@@ -222,16 +223,20 @@
               Jul 2026 – Sep 2026
             </span>
           </div>
-          <ul class="space-y-2 text-slate-600 text-sm list-disc list-inside leading-relaxed mb-4">
+
+          <ul class="space-y-2 text-slate-600 text-sm list-disc list-inside leading-relaxed mb-6">
             <li>Processed and analyzed recruitment datasets using Microsoft Excel (Pivot Tables and advanced formulas) to support data-driven talent acquisition and HR decision-making.</li>
             <li>Streamlined crew recruitment operations by screening applicant resumes, coordinating interview schedules, and maintaining administrative accuracy across candidate pipelines.</li>
             <li>Optimized employee data management by updating certification records in SAP and conducting QA manual testing on the recruitment website, documenting bugs for IT resolution.</li>
           </ul>
-          <!-- Foto Magang HR -->
-          <div class="h-36 w-full sm:w-64 rounded-2xl overflow-hidden border border-slate-100 cursor-pointer group relative mt-4" onclick="openModal('magangHR.jpeg')">
+
+          <!-- Foto Magang HR (Full Width Banner) -->
+          <div class="h-64 sm:h-80 w-full rounded-2xl overflow-hidden border border-slate-100 cursor-pointer group relative" onclick="openModal('magangHR.jpeg')">
             <img src="magangHR.jpeg" alt="Magang HR Intern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+              <span class="text-white text-xs bg-black/60 px-3 py-1.5 rounded-full font-medium flex items-center gap-1.5">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Click to preview
+              </span>
             </div>
           </div>
         </div>
